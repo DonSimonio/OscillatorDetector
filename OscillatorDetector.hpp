@@ -117,7 +117,7 @@ public:
      * @brief Set the smoothing threshold used to debounce extrema detection.
      * @param threshold Number of updates required to confirm an extremum.
      */
-    void setSmootherThreshold(int threshold) {
+    void setSmootherThreshold(uint8_t threshold) {
         m_params.smootherThreshold = threshold;
     }
 
@@ -125,7 +125,7 @@ public:
      * @brief Set the sensitivity threshold for the number of extrema needed to trigger detection.
      * @param sensitivity Number of extrema required to return true in detect().
      */
-    void setSensitivity(int sensitivity) {
+    void setSensitivity(uint8_t sensitivity) {
         m_params.sensitivity = sensitivity;
     }
 
@@ -133,7 +133,7 @@ public:
      * @brief Get the current smoothing threshold.
      * @return The smoothing threshold value.
      */
-    int getSmootherThreshold() const {
+    uint8_t getSmootherThreshold() const {
         return m_params.smootherThreshold;
     }
 
@@ -141,7 +141,7 @@ public:
      * @brief Get the current sensitivity threshold.
      * @return The sensitivity threshold value.
      */
-    int getSensitivity() const {
+    uint8_t getSensitivity() const {
         return m_params.sensitivity;
     }
 
